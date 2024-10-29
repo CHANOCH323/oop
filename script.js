@@ -14,7 +14,12 @@ const pet = {
 const petActions = {
     printPet: function(obj) {
         console.log(obj);
+    },
+    calculateFoodAmount: function(obj,fod){
+        console.log(fod/(obj.age*10))
     }
 
 }
 petActions.printPet(pet)
+petActions.calculateFoodAmount(pet,300)
+
